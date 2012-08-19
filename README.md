@@ -17,7 +17,7 @@ This project includes a couple of maven modules which produces a droid apk ready
 
 To produce the apk just run:
 
-    $ mvn clean package -Pdroid -Psign
+    $ mvn -Dandroid.sdk.path=[path_to_your_android_sdk_home] clean package -Pdroid -Psign
 
 And you will get the following pakage:
 
