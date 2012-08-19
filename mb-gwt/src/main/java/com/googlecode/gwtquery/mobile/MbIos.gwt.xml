@@ -1,0 +1,15 @@
+<module rename-to='mbdev'>
+    <inherits name='com.googlecode.gwtquery.mobile.MbCommon'/>
+    
+    <set-configuration-property name="mgwt.css" value="obf" />
+    <set-configuration-property name="CssResource.style" value="obf"/>
+    
+    <set-property name="user.agent" value="safari" />    
+    <set-property name="mobile.user.agent" value="mobilesafari" />    
+    <set-property name="mgwt.os" value="retina,iphone,ipad,ipad_retina" />
+    
+    <set-property name="phonegap.env" value="yes" />
+
+    <set-property name="compiler.stackMode" value="emulated" />
+</module>
+    

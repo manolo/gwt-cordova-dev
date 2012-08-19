@@ -1,0 +1,40 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mobile Devel App</title>
+  <script src="mbdev.nocache.js"></script>
+</head>
+<body style="background: #093445;">
+
+  <div id="fb-root"></div>
+
+  <script>
+     // Load the appropriate js libraries needed for the application
+     function insertScripts() {
+       for (var i = 0; i < arguments.length; i++) 
+         document.write("<script language='javascript' type='text/javascript' src='" + arguments[i] + "' /><\/sc" + "ript>");
+     }
+     var isPhoneGap = document.location.href.indexOf("file://") === 0;
+     var isIos = /(iphone|ipod|ipad)/i.test(window.navigator.userAgent);
+     
+     // Load phonegap
+     if (isIos) {
+       insertScripts('js/ios/cordova-2.0.0.js');
+     } else {
+       insertScripts('js/cordova-2.0.0.js');
+     }
+     
+     // Load facebook Api
+     if (isPhoneGap) {
+       // phonegap-facebook-connect uses its own libraries
+       insertScripts('js/facebook_js_sdk.js', 'js/cdv-plugin-fb-connect.js');
+     } else {
+       // browser uses standard api
+       insertScripts('https://connect.facebook.net/en_US/all.js');
+     }
+  </script>
+  
+  <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+</body>
+</html>

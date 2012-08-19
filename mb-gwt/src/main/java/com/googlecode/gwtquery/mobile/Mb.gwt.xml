@@ -1,0 +1,21 @@
+<module rename-to='mbdev'>
+    <inherits name='com.googlecode.gwtquery.mobile.MbCommon'/>
+    
+    <set-property name="user.agent" value="safari,gecko1_8,opera,ie9,ie8" />
+    <set-property name="user.agent" value="safari,gecko1_8" />
+<!--     <set-property name="user.agent" value="safari" /> -->
+    
+    <set-property name="mgwt.os" value="android,retina,iphone,desktop,ipad,ipad_retina,android_tablet,blackberry" />
+    <set-property name="mgwt.os" value="desktop" />
+<!--     <set-property name="mgwt.os" value="ipad,android" /> -->
+    
+    
+    <!-- In dev-mode we don't need native permutations -->
+    <set-property name="phonegap.env" value="no" />
+<!--     <set-property name="phonegap.env" value="yes" /> -->
+    
+    <!-- In dev-mode we could need to increase permutations to replace tap by click events -->
+<!--     <inherits name="com.googlecode.mgwt.MGWT"/> -->
+    
+<!--     <set-configuration-property name="mgwt.superdevmode" value="on" /> -->
+</module>

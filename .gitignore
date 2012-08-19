@@ -1,0 +1,17 @@
+.settings
+.classpath
+.project
+.gwt
+target
+R.java
+bin
+www
+www-test
+*~
+*diff
+kk
+*.tar
+*.log
+tmp
+._*
+build

@@ -1,0 +1,26 @@
+<module>
+    <inherits name='com.google.gwt.query.QueryMin'/>
+    <inherits name='com.googlecode.gwtphonegap.PhoneGap' />
+    <inherits name="com.googlecode.mgwt.MGWTMin"/>
+    
+    <entry-point class='com.googlecode.gwtquery.mobile.client.MbEntryPoint'/>
+    
+    <inherits name="com.google.gwt.logging.Logging"/>
+    <set-property name="gwt.logging.logLevel" value="INFO"/>
+    <set-property name="gwt.logging.consoleHandler" value="DISABLED" />
+    <set-property name="gwt.logging.firebugHandler" value="DISABLED" />
+    <set-property name="gwt.logging.systemHandler" value="ENABLED" />
+    <set-property name="gwt.logging.developmentModeHandler" value="DISABLED" />
+    <set-property name="gwt.logging.hasWidgetsHandler" value="DISABLED" />
+    <set-property name="gwt.logging.popupHandler" value="DISABLED" />
+    <set-property name="gwt.logging.simpleRemoteHandler" value="DISABLED" />
+    
+    <add-linker name="xsiframe"/>
+    
+    <!-- Use pure css selectors in GQuery  -->
+    <set-property name="selectorCapability" value="native"/>
+    
+    <set-configuration-property name="devModeRedirectEnabled" value="true"/>
+    <set-configuration-property name="mgwt.css" value="pretty" />
+    <set-configuration-property name="CssResource.style" value="pretty"/> 
+</module>

@@ -1,0 +1,11 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.googlecode.gwtquery.mobile</groupId>
+  <artifactId>mb-dev-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0</version>
+  <modules>
+    <module>mb-gwt</module>
+    <module>mb-droid</module>
+  </modules>
+</project>
