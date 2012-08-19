@@ -16,9 +16,11 @@
 This project includes a couple of maven modules which produces a droid apk ready to install in any device.
 
 To produce the apk just run:
+
     $ mvn clean package -Pdroid -Psign
 
 And you will get the following pakage:
+
     mb-droid/target/mb-droid-1.0.apk
 
 
